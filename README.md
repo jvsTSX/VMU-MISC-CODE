@@ -4,7 +4,7 @@ use [waterbear](https://github.com/wtetzner/waterbear) for assembling, make sure
 NOTE: SFR.I IS NOT MADE BY ME, IT'S ONLY INCUDED FOR THE SAKE OF CONVENIENCE, IT'S ORIGINALLY TAKEN FROM [THIS REPO](https://github.com/jahan-addison/snake)
 
 waterbear usage on your favourite Command Line program:
-`waterbear -assemble program.s -o program.vms`
+`waterbear assemble program.s -o program.vms`
 
 # TEST PROGRAMS LIST
 

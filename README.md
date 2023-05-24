@@ -1,4 +1,12 @@
-# TEST PROGRAMS
+# ASSEMBLING
+use [waterbear](https://github.com/wtetzner/waterbear) for assembling, make sure SFR.I is on the same folder as the sources
+
+NOTE: SFR.I IS NOT MADE BY ME, IT'S ONLY INCUDED FOR THE SAKE OF CONVENIENCE, IT'S ORIGINALLY TAKEN FROM [THIS REPO](https://github.com/jahan-addison/snake)
+
+waterbear usage on your favourite Command Line program:
+`waterbear -assemble program.s -o program.vms`
+
+# TEST PROGRAMS LIST
 
 ## SPEEDTEST
 program used for checking whether the 6MHz Ceramic clock can be used in handheld mode and how it affects the sound timer
@@ -47,3 +55,6 @@ T1HC - duty parameter of upper timer half
 T1LR - frequency parameter of lower timer half
 T1LC - duty parameter of lower timer half
 ```
+
+WARNING: THIS PROGRAM WILL RAPIDLY DRAIN YOUR VMU'S BATTERY!
+MAKE SURE TO EITHER USE AN AA BATTERY ADAPTOR OR USE RECHARGEABLE CR2032 BATTERIES (LIR or ML)

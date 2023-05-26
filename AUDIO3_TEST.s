@@ -130,13 +130,6 @@ Main: ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 	ld Timer1Enables 
 	or #%00100000
 	st T1CNT
-	; wait a little because the datasheet tells me to
-	mov #$A0, 3
-	mov #$80, B
-.Wait:
-  dbnz B, .Wait
-	mov #$80, B
-  dbnz 3, .Wait
 	; update registers
 	ld TimerComHigh
 	st T1HC

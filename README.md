@@ -58,3 +58,22 @@ T1LC - duty parameter of lower timer half
 
 WARNING: THIS PROGRAM WILL RAPIDLY DRAIN YOUR VMU'S BATTERY!
 MAKE SURE TO EITHER USE AN AA BATTERY ADAPTOR OR USE RECHARGEABLE CR2032 BATTERIES (LIR or ML)
+
+## EXT_REGISTER_TST
+program for checking EXT register behaviour
+
+controls:
+```
+Dpad up/down: increment or decrement selected address nibble
+Dpad left/right: select address nibble
+A and B: select EXT bit
+MODE: go back to BIOS
+SLEEP: flip selected EXT bit
+```
+
+on startup there should be a string saying "`THIS' FLASH `" on the very top of the screen, according to the datasheet, referencing the internal BIOS ROM using the LDC instruction should be possible, if this is correct the string should show something different under the same address
+
+# MISC PROGRAMS LIST
+
+## HELLOWORLD
+a simple, typed "Hello, world!" on your dreamcast VMU using the font engine from the EXT test program, just press MODE to exit back to the BIOS

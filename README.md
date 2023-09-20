@@ -77,3 +77,18 @@ on startup there should be a string saying "`THIS' FLASH `" on the very top of t
 
 ## HELLOWORLD
 a simple, typed "Hello, world!" on your dreamcast VMU using the font engine from the EXT test program, just press MODE to exit back to the BIOS
+
+## MEMO PAD
+a paint-like app to draw on the screen and saving it briefly (currently saves on RAM, it will be deleted as soon as the battery runs out or the VMU is plugged on the dreamcast)
+
+controls:
+```
+Dpad: move cursor
+A: paint black pixel
+B: paint white pixel
+MODE: go back to BIOS
+```
+
+on startup it will ask you if you want to keep or clear the canvas, make sure to select "Clear", if it's the first time you're running the program after removing it from the dreamcast or when inserting a fresh battery, it saves the canvas automatically since it stores it on Work RAM
+
+NOTE: this program extensively uses the RC clock when you are painting a pixel, power consumption won't be absurdly high but may be higher than a standard mini-game
